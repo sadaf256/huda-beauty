@@ -1,0 +1,139 @@
+body {
+  /* Use Roboto as the default font */
+  font-family: 'Robot',sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif; /* Apply Roboto to all <p> tags */
+  line-height: 1.6; /* Improve readability */
+}
+
+header, footer {
+  background-color: #fce4ec;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header img.logo, footer img.footer-logo {
+   /* Adjust the logo size as needed */ 
+  max-height: 50px; 
+    margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  padding: 2em;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  /* Rounded corners for images */
+  border-radius: 8px;
+  /* Subtle shadow*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-filter button {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  /* Light pink button */
+  background-color: #f8bbd0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+video {
+  max-width: 80%;
+}
+
+#tutorials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tutorials iframe {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea, form button {
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+form button {
+  background-color: #f8bbd0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  nav a {
+      display: block;
+      margin: 0.5em 0;
+  }
+}
+
+
+
+/* Columns */
+#about article {
+  column-count: 2;
+  column-gap: 20px;
+  column-rule: 1px dotted #ccc;
+}
+
+/* First Letter */
+#about article p::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e91e63; /* Pink color */
+}
+
+/* Webfont 2 */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Glow Effect */
+h2 {
+  text-shadow: 0 0 5px #f8bbd0, 0 0 10px #f8bbd0;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}

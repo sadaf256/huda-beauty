@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huda Beauty Makeup Line</title>
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    ...
+</head>
+<body>
+    <header>
+        <img src="images/hudabeautylogo.png" alt="hudabeautylogo" class="Logo">
+        <nav>
+            <a href="#featured">Featured</a>
+            <a href="#tutorials">Tutorials</a>
+            <a href="#about">About Huda</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="featured">
+            <h2>Featured Products</h2>
+            <div class="product-filter">
+                <button data-filter="all">All</button>
+                <button data-filter="eyes">Eyes</button>
+                <button data-filter="lips">Lips</button>
+                <button data-filter="face">Face</button>
+            </div>
+            <div class="product-grid">
+                <div class="product" data-category="eyes">
+                    <img src="images/eyeshadow .jpg" alt="Obsessions Eyeshadow Palette">
+                    <h3>Obsessions Eyeshadow Palette - Ruby Edition</h3>
+                    <p>Dive into rich, jewel-toned hues with the Ruby Obsessions Palette. This compact palette features nine highly pigmented shades, from velvety mattes to dazzling metallics, perfect for creating captivating eye looks. The creamy, blendable formula ensures seamless application and long-lasting wear.</p>
+                </div>
+                <div class="product" data-category="lips">
+                    <img src="images/liquid lipstick.jpg" alt="Liquid Matte Lipstick">
+                    <h3>Liquid Matte Lipstick - Heartbreaker</h3>
+                    <p>Experience intense color payoff and a comfortable, weightless feel with the Liquid Matte Lipstick in 'Heartbreaker.' This long-wearing formula glides on smoothly, delivering a bold, matte finish that stays put for hours without drying out your lips. Its precise applicator allows for effortless and flawless application.</p>
+                </div>
+                <div class="product" data-category="face">
+                    <img src="images/foundation.jpg" alt="Glowish Multidew Skin Tint">
+                    <h3>Glowish Easy Blur Foundation</h3>
+                    <p>Achieve a natural, radiant complexion with the Glowish Multidew lightweight foundation. This lightweight formula provides sheer to medium coverage, blurring imperfections and enhancing your skin's natural glow. Enriched with skin-loving ingredients, it hydrates and nourishes, leaving your skin looking fresh and dewy all day.</p>
+                </div>
+                <div class="product" data-category="eyes">
+                    <img src="images/eyeliner.jpg" alt="Life Liner Duo Pencil & Liquid Eyeliner">
+                    <h3>Life Liner Duo Pencil & Liquid Eyeliner - Very Vanta</h3>
+                    <p>Create precise lines and bold looks with the Life Liner Duo. This dual-ended eyeliner features a creamy pencil for effortless definition and a highly pigmented liquid liner for intense, long-lasting drama. The waterproof and smudge-proof formula ensures your eye looks stay flawless all day and night.</p>
+                </div>
+                <div class="product" data-category="lips">
+                    <img src="images/lip gloss.jpg" alt="Diamond Balm">
+                    <h3>Diamond Balm - Negligee</h3>
+                    <p>Indulge in luxurious hydration and a touch of shimmer with the Diamond Balm in 'Negligee.' This nourishing lip balm is infused with diamond dust for a subtle, multi-dimensional sparkle. Its creamy texture glides on smoothly, leaving your lips feeling soft, supple, and irresistibly kissable.</p>
+                </div>
+                
+            </div>
+        </section>
+        <section id="tutorials">
+            <h2>Makeup Tutorials</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9NwvV67w4HQ?si=ICvgfd-sy2kmEMPH&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </video>
+            
+        </section>
+        <section id="about">
+            <h2>About Huda Beauty</h2>
+            <img src="images/huda.jpg" alt="Huda Kattan" class="about-image">
+            <article>
+                <p>Huda Kattan, a renowned makeup artist and beauty influencer, founded Huda Beauty with a mission to empower beauty lovers worldwide. Starting with false eyelashes, the brand has expanded to offer a wide range of high-quality makeup products.</p>
+                <details>
+                    <summary>Read More</summary>
+                    <p>Huda's journey from blogger to global beauty mogul is an inspiration to many. Her dedication to creating innovative and inclusive products has made Huda Beauty a beloved brand. Her focus on high-performance formulas and trendsetting products has garnered a loyal following. She continually pushes boundaries and sets new standards in the beauty industry.</p>
+                </details>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                
+                       
+                    </form>
+                </section>
+
+            </form>
+        </section>
+
+        <section id="quiz">
+            <h2>Makeup Quiz</h2>
+            <form id="quizForm">
+                <p>Question 1: What is Huda Beauty most known for?</p>
+                <label><input type="radio" name="q1" value="a"> Eyeshadow palettes</label><br>
+                <label><input type="radio" name="q1" value="b"> Skincare products</label><br>
+                <label><input type="radio" name="q1" value="c"> Hair accessories</label><br>
+        
+                <p>Question 2: Which product is known for its long-lasting matte finish?</p>
+                <label><input type="radio" name="q2" value="a"> Diamond Balm</label><br>
+                <label><input type="radio" name="q2" value="b"> Liquid Matte Lipstick</label><br>
+                <label><input type="radio" name="q2" value="c"> Glowish Multidew Skin Tint</label><br>
+        
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Huda Beauty</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
